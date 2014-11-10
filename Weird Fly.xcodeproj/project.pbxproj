@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA2A2D6918C0A4EE00F6C428 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2A2D6818C0A4EE00F6C428 /* libz.dylib */; };
+		EA2A2D6A18C0A4F300F6C428 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2A2D6618C0A4D800F6C428 /* libGoogleAnalytics.a */; };
+		EA2A2D6E18C0A54F00F6C428 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2A2D6D18C0A54F00F6C428 /* libsqlite3.0.dylib */; };
+		EA3C6F4B18B7D9B00041F6A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6F4A18B7D9B00041F6A6 /* Foundation.framework */; };
+		EA3C6F4D18B7D9B00041F6A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6F4C18B7D9B00041F6A6 /* CoreGraphics.framework */; };
+		EA3C6F4F18B7D9B00041F6A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6F4E18B7D9B00041F6A6 /* UIKit.framework */; };
+		EA3C6F5118B7D9B00041F6A6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6F5018B7D9B00041F6A6 /* SpriteKit.framework */; };
+		EA3C6F5718B7D9B00041F6A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F5518B7D9B00041F6A6 /* InfoPlist.strings */; };
+		EA3C6F5918B7D9B00041F6A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6F5818B7D9B00041F6A6 /* main.m */; };
+		EA3C6F5D18B7D9B00041F6A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6F5C18B7D9B00041F6A6 /* AppDelegate.m */; };
+		EA3C6F6018B7D9B00041F6A6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F5E18B7D9B00041F6A6 /* Main_iPhone.storyboard */; };
+		EA3C6F6318B7D9B00041F6A6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F6118B7D9B00041F6A6 /* Main_iPad.storyboard */; };
+		EA3C6F6618B7D9B00041F6A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6F6518B7D9B00041F6A6 /* ViewController.m */; };
+		EA3C6F6918B7D9B00041F6A6 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6F6818B7D9B00041F6A6 /* Scene.m */; };
+		EA3C6F6D18B7D9B00041F6A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F6C18B7D9B00041F6A6 /* Images.xcassets */; };
+		EA3C6F7418B7D9B00041F6A6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6F7318B7D9B00041F6A6 /* XCTest.framework */; };
+		EA3C6F7518B7D9B00041F6A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6F4A18B7D9B00041F6A6 /* Foundation.framework */; };
+		EA3C6F7618B7D9B00041F6A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6F4E18B7D9B00041F6A6 /* UIKit.framework */; };
+		EA3C6F7E18B7D9B00041F6A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F7C18B7D9B00041F6A6 /* InfoPlist.strings */; };
+		EA3C6F8018B7D9B00041F6A6 /* Weird_flyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6F7F18B7D9B00041F6A6 /* Weird_flyTests.m */; };
+		EA3C6F8D18B7DA8B0041F6A6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6F8C18B7DA8B0041F6A6 /* Math.m */; };
+		EA3C6F9118B7DCAF0041F6A6 /* WeirdNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6F9018B7DCAF0041F6A6 /* WeirdNode.m */; };
+		EA3C6FA618B7DD730041F6A6 /* game_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F9A18B7DD730041F6A6 /* game_over@2x.png */; };
+		EA3C6FA718B7DD730041F6A6 /* get_ready@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F9B18B7DD730041F6A6 /* get_ready@2x.png */; };
+		EA3C6FA818B7DD730041F6A6 /* medal_bronze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F9C18B7DD730041F6A6 /* medal_bronze@2x.png */; };
+		EA3C6FA918B7DD730041F6A6 /* medal_gold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F9D18B7DD730041F6A6 /* medal_gold@2x.png */; };
+		EA3C6FAA18B7DD730041F6A6 /* medal_plate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F9E18B7DD730041F6A6 /* medal_plate@2x.png */; };
+		EA3C6FAB18B7DD730041F6A6 /* medal_platinum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6F9F18B7DD730041F6A6 /* medal_platinum@2x.png */; };
+		EA3C6FAC18B7DD730041F6A6 /* medal_silver@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6FA018B7DD730041F6A6 /* medal_silver@2x.png */; };
+		EA3C6FB218B7DF4F0041F6A6 /* SKScrollingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FB118B7DF4F0041F6A6 /* SKScrollingNode.m */; };
+		EA3C6FB518B7E1610041F6A6 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FB418B7E1610041F6A6 /* Score.m */; };
+		EA3C6FBB18B83F630041F6A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA3C6FBD18B83F630041F6A6 /* Localizable.strings */; };
+		EA3C6FC918B922810041F6A6 /* SoundEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FC818B922810041F6A6 /* SoundEffects.m */; };
+		EA3C6FD118B922E90041F6A6 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FCC18B922E90041F6A6 /* GameCenterManager.m */; };
+		EA3C6FD218B922E90041F6A6 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FCE18B922E90041F6A6 /* NSDataAES256.m */; };
+		EA3C6FD318B922E90041F6A6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FD018B922E90041F6A6 /* Reachability.m */; };
+		EA3C6FD518B924BB0041F6A6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6FD418B924BB0041F6A6 /* GameKit.framework */; };
+		EA3C6FD718B924C00041F6A6 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C6FD618B924C00041F6A6 /* iAd.framework */; };
+		EA3C6FF018B963460041F6A6 /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FEF18B963460041F6A6 /* HomeScene.m */; };
+		EA3C6FF418B9652D0041F6A6 /* AYUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FF318B9652D0041F6A6 /* AYUIButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EA3C6FFE18BA3CEC0041F6A6 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C6FFD18BA3CEC0041F6A6 /* FXBlurView.m */; };
+		EAE1111218BC108F00791DA7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE1111118BC108F00791DA7 /* AudioToolbox.framework */; };
+		EAE1111918BC114000791DA7 /* bonus.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAE1111318BC114000791DA7 /* bonus.wav */; };
+		EAE1111A18BC114000791DA7 /* coins.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAE1111418BC114000791DA7 /* coins.wav */; };
+		EAE1112118BC126500791DA7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE1112018BC126500791DA7 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA3C6F7718B7D9B00041F6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA3C6F3F18B7D9B00041F6A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA3C6F4618B7D9B00041F6A6;
+			remoteInfo = "Weird fly";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA29926618BD388300B8E80F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA2A2D6518C0A4D800F6C428 /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
+		EA2A2D6618C0A4D800F6C428 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
+		EA2A2D6818C0A4EE00F6C428 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EA2A2D6B18C0A54900F6C428 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EA2A2D6D18C0A54F00F6C428 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		EA3C6F4718B7D9B00041F6A6 /* Weird Fly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weird Fly.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3C6F4A18B7D9B00041F6A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA3C6F4C18B7D9B00041F6A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA3C6F4E18B7D9B00041F6A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA3C6F5018B7D9B00041F6A6 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EA3C6F5418B7D9B00041F6A6 /* Weird Fly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Weird Fly-Info.plist"; sourceTree = "<group>"; };
+		EA3C6F5618B7D9B00041F6A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3C6F5818B7D9B00041F6A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA3C6F5A18B7D9B00041F6A6 /* Weird Fly-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weird Fly-Prefix.pch"; sourceTree = "<group>"; };
+		EA3C6F5B18B7D9B00041F6A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA3C6F5C18B7D9B00041F6A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA3C6F5F18B7D9B00041F6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EA3C6F6218B7D9B00041F6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EA3C6F6418B7D9B00041F6A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA3C6F6518B7D9B00041F6A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA3C6F6718B7D9B00041F6A6 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		EA3C6F6818B7D9B00041F6A6 /* Scene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		EA3C6F6C18B7D9B00041F6A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA3C6F7218B7D9B00041F6A6 /* Weird FlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weird FlyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3C6F7318B7D9B00041F6A6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA3C6F7B18B7D9B00041F6A6 /* Weird FlyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Weird FlyTests-Info.plist"; sourceTree = "<group>"; };
+		EA3C6F7D18B7D9B00041F6A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3C6F7F18B7D9B00041F6A6 /* Weird_flyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weird_flyTests.m; sourceTree = "<group>"; };
+		EA3C6F8918B7D9F80041F6A6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		EA3C6F8A18B7D9F80041F6A6 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		EA3C6F8B18B7DA8B0041F6A6 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		EA3C6F8C18B7DA8B0041F6A6 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		EA3C6F8F18B7DCAF0041F6A6 /* WeirdNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeirdNode.h; sourceTree = "<group>"; };
+		EA3C6F9018B7DCAF0041F6A6 /* WeirdNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeirdNode.m; sourceTree = "<group>"; };
+		EA3C6F9A18B7DD730041F6A6 /* game_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game_over@2x.png"; sourceTree = "<group>"; };
+		EA3C6F9B18B7DD730041F6A6 /* get_ready@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get_ready@2x.png"; sourceTree = "<group>"; };
+		EA3C6F9C18B7DD730041F6A6 /* medal_bronze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_bronze@2x.png"; sourceTree = "<group>"; };
+		EA3C6F9D18B7DD730041F6A6 /* medal_gold@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_gold@2x.png"; sourceTree = "<group>"; };
+		EA3C6F9E18B7DD730041F6A6 /* medal_plate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_plate@2x.png"; sourceTree = "<group>"; };
+		EA3C6F9F18B7DD730041F6A6 /* medal_platinum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_platinum@2x.png"; sourceTree = "<group>"; };
+		EA3C6FA018B7DD730041F6A6 /* medal_silver@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_silver@2x.png"; sourceTree = "<group>"; };
+		EA3C6FB018B7DF4F0041F6A6 /* SKScrollingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKScrollingNode.h; sourceTree = "<group>"; };
+		EA3C6FB118B7DF4F0041F6A6 /* SKScrollingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKScrollingNode.m; sourceTree = "<group>"; };
+		EA3C6FB318B7E1610041F6A6 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		EA3C6FB418B7E1610041F6A6 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		EA3C6FBC18B83F630041F6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA3C6FBE18B83F6C0041F6A6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3C6FBF18B83F6C0041F6A6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA3C6FC018B83F6C0041F6A6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		EA3C6FC118B83F6C0041F6A6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		EA3C6FC218B83F6C0041F6A6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3C6FC718B922810041F6A6 /* SoundEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffects.h; sourceTree = "<group>"; };
+		EA3C6FC818B922810041F6A6 /* SoundEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffects.m; sourceTree = "<group>"; };
+		EA3C6FCB18B922E90041F6A6 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		EA3C6FCC18B922E90041F6A6 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		EA3C6FCD18B922E90041F6A6 /* NSDataAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAES256.h; sourceTree = "<group>"; };
+		EA3C6FCE18B922E90041F6A6 /* NSDataAES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAES256.m; sourceTree = "<group>"; };
+		EA3C6FCF18B922E90041F6A6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EA3C6FD018B922E90041F6A6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EA3C6FD418B924BB0041F6A6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		EA3C6FD618B924C00041F6A6 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		EA3C6FEE18B963460041F6A6 /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
+		EA3C6FEF18B963460041F6A6 /* HomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScene.m; sourceTree = "<group>"; };
+		EA3C6FF218B9652D0041F6A6 /* AYUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYUIButton.h; sourceTree = "<group>"; };
+		EA3C6FF318B9652D0041F6A6 /* AYUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYUIButton.m; sourceTree = "<group>"; };
+		EA3C6FFC18BA3CEC0041F6A6 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		EA3C6FFD18BA3CEC0041F6A6 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		EAE1111118BC108F00791DA7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EAE1111318BC114000791DA7 /* bonus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bonus.wav; sourceTree = "<group>"; };
+		EAE1111418BC114000791DA7 /* coins.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coins.wav; sourceTree = "<group>"; };
+		EAE1112018BC126500791DA7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA3C6F4418B7D9B00041F6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2A2D6E18C0A54F00F6C428 /* libsqlite3.0.dylib in Frameworks */,
+				EA2A2D6A18C0A4F300F6C428 /* libGoogleAnalytics.a in Frameworks */,
+				EA2A2D6918C0A4EE00F6C428 /* libz.dylib in Frameworks */,
+				EAE1112118BC126500791DA7 /* AVFoundation.framework in Frameworks */,
+				EAE1111218BC108F00791DA7 /* AudioToolbox.framework in Frameworks */,
+				EA3C6FD718B924C00041F6A6 /* iAd.framework in Frameworks */,
+				EA3C6FD518B924BB0041F6A6 /* GameKit.framework in Frameworks */,
+				EA3C6F4D18B7D9B00041F6A6 /* CoreGraphics.framework in Frameworks */,
+				EA3C6F4F18B7D9B00041F6A6 /* UIKit.framework in Frameworks */,
+				EA3C6F5118B7D9B00041F6A6 /* SpriteKit.framework in Frameworks */,
+				EA3C6F4B18B7D9B00041F6A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3C6F6F18B7D9B00041F6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3C6F7418B7D9B00041F6A6 /* XCTest.framework in Frameworks */,
+				EA3C6F7618B7D9B00041F6A6 /* UIKit.framework in Frameworks */,
+				EA3C6F7518B7D9B00041F6A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA2A2D6418C0A4D800F6C428 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EA2A2D6518C0A4D800F6C428 /* GANTracker.h */,
+				EA2A2D6618C0A4D800F6C428 /* libGoogleAnalytics.a */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		EA3C6F3E18B7D9B00041F6A6 = {
+			isa = PBXGroup;
+			children = (
+				EA2A2D6418C0A4D800F6C428 /* Library */,
+				EAE1111F18BC118D00791DA7 /* Audio */,
+				EA3C6FFB18BA3CEC0041F6A6 /* FXBlurView */,
+				EA3C6FF118B9652D0041F6A6 /* AYUIButton-master */,
+				EA3C6FCA18B922E90041F6A6 /* GC Manager */,
+				EA3C6F5218B7D9B00041F6A6 /* Weird fly */,
+				EA3C6F7918B7D9B00041F6A6 /* Weird flyTests */,
+				EA3C6F4918B7D9B00041F6A6 /* Frameworks */,
+				EA3C6F4818B7D9B00041F6A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA3C6F4818B7D9B00041F6A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6F4718B7D9B00041F6A6 /* Weird Fly.app */,
+				EA3C6F7218B7D9B00041F6A6 /* Weird FlyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA3C6F4918B7D9B00041F6A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA2A2D6D18C0A54F00F6C428 /* libsqlite3.0.dylib */,
+				EA2A2D6B18C0A54900F6C428 /* libsqlite3.dylib */,
+				EA2A2D6818C0A4EE00F6C428 /* libz.dylib */,
+				EAE1112018BC126500791DA7 /* AVFoundation.framework */,
+				EAE1111118BC108F00791DA7 /* AudioToolbox.framework */,
+				EA3C6FD618B924C00041F6A6 /* iAd.framework */,
+				EA3C6FD418B924BB0041F6A6 /* GameKit.framework */,
+				EA3C6F4A18B7D9B00041F6A6 /* Foundation.framework */,
+				EA3C6F4C18B7D9B00041F6A6 /* CoreGraphics.framework */,
+				EA3C6F4E18B7D9B00041F6A6 /* UIKit.framework */,
+				EA3C6F5018B7D9B00041F6A6 /* SpriteKit.framework */,
+				EA3C6F7318B7D9B00041F6A6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA3C6F5218B7D9B00041F6A6 /* Weird fly */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6FB718B7E95D0041F6A6 /* images */,
+				EA3C6FB818B7E9660041F6A6 /* Model */,
+				EA3C6F5B18B7D9B00041F6A6 /* AppDelegate.h */,
+				EA3C6F5C18B7D9B00041F6A6 /* AppDelegate.m */,
+				EA3C6F5E18B7D9B00041F6A6 /* Main_iPhone.storyboard */,
+				EA3C6F6118B7D9B00041F6A6 /* Main_iPad.storyboard */,
+				EA3C6F6418B7D9B00041F6A6 /* ViewController.h */,
+				EA3C6F6518B7D9B00041F6A6 /* ViewController.m */,
+				EA3C6FEE18B963460041F6A6 /* HomeScene.h */,
+				EA3C6FEF18B963460041F6A6 /* HomeScene.m */,
+				EA3C6F6718B7D9B00041F6A6 /* Scene.h */,
+				EA3C6F6818B7D9B00041F6A6 /* Scene.m */,
+				EA3C6F8E18B7DC990041F6A6 /* Nodes */,
+				EA3C6F6C18B7D9B00041F6A6 /* Images.xcassets */,
+				EA3C6F5318B7D9B00041F6A6 /* Supporting Files */,
+			);
+			path = "Weird fly";
+			sourceTree = "<group>";
+		};
+		EA3C6F5318B7D9B00041F6A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6F5418B7D9B00041F6A6 /* Weird Fly-Info.plist */,
+				EA3C6F5518B7D9B00041F6A6 /* InfoPlist.strings */,
+				EA3C6F5818B7D9B00041F6A6 /* main.m */,
+				EA3C6F5A18B7D9B00041F6A6 /* Weird Fly-Prefix.pch */,
+				EA3C6FBD18B83F630041F6A6 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA3C6F7918B7D9B00041F6A6 /* Weird flyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6F7F18B7D9B00041F6A6 /* Weird_flyTests.m */,
+				EA3C6F7A18B7D9B00041F6A6 /* Supporting Files */,
+			);
+			path = "Weird flyTests";
+			sourceTree = "<group>";
+		};
+		EA3C6F7A18B7D9B00041F6A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6F7B18B7D9B00041F6A6 /* Weird FlyTests-Info.plist */,
+				EA3C6F7C18B7D9B00041F6A6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA3C6F8E18B7DC990041F6A6 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6F8F18B7DCAF0041F6A6 /* WeirdNode.h */,
+				EA3C6F9018B7DCAF0041F6A6 /* WeirdNode.m */,
+				EA3C6FB018B7DF4F0041F6A6 /* SKScrollingNode.h */,
+				EA3C6FB118B7DF4F0041F6A6 /* SKScrollingNode.m */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		EA3C6FB718B7E95D0041F6A6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6F9A18B7DD730041F6A6 /* game_over@2x.png */,
+				EA3C6F9B18B7DD730041F6A6 /* get_ready@2x.png */,
+				EA3C6F9C18B7DD730041F6A6 /* medal_bronze@2x.png */,
+				EA3C6F9D18B7DD730041F6A6 /* medal_gold@2x.png */,
+				EA3C6F9E18B7DD730041F6A6 /* medal_plate@2x.png */,
+				EA3C6F9F18B7DD730041F6A6 /* medal_platinum@2x.png */,
+				EA3C6FA018B7DD730041F6A6 /* medal_silver@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		EA3C6FB818B7E9660041F6A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6FB318B7E1610041F6A6 /* Score.h */,
+				EA3C6FB418B7E1610041F6A6 /* Score.m */,
+				EA3C6F8918B7D9F80041F6A6 /* Constants.h */,
+				EA3C6F8A18B7D9F80041F6A6 /* Macros.h */,
+				EA3C6F8B18B7DA8B0041F6A6 /* Math.h */,
+				EA3C6F8C18B7DA8B0041F6A6 /* Math.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EA3C6FCA18B922E90041F6A6 /* GC Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6FCB18B922E90041F6A6 /* GameCenterManager.h */,
+				EA3C6FCC18B922E90041F6A6 /* GameCenterManager.m */,
+				EA3C6FCD18B922E90041F6A6 /* NSDataAES256.h */,
+				EA3C6FCE18B922E90041F6A6 /* NSDataAES256.m */,
+				EA3C6FCF18B922E90041F6A6 /* Reachability.h */,
+				EA3C6FD018B922E90041F6A6 /* Reachability.m */,
+			);
+			path = "GC Manager";
+			sourceTree = "<group>";
+		};
+		EA3C6FF118B9652D0041F6A6 /* AYUIButton-master */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6FF218B9652D0041F6A6 /* AYUIButton.h */,
+				EA3C6FF318B9652D0041F6A6 /* AYUIButton.m */,
+			);
+			path = "AYUIButton-master";
+			sourceTree = "<group>";
+		};
+		EA3C6FFB18BA3CEC0041F6A6 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6FFC18BA3CEC0041F6A6 /* FXBlurView.h */,
+				EA3C6FFD18BA3CEC0041F6A6 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
+		EAE1111F18BC118D00791DA7 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C6FC718B922810041F6A6 /* SoundEffects.h */,
+				EA3C6FC818B922810041F6A6 /* SoundEffects.m */,
+				EAE1111318BC114000791DA7 /* bonus.wav */,
+				EAE1111418BC114000791DA7 /* coins.wav */,
+			);
+			name = Audio;
+			path = "Weird fly";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA3C6F4618B7D9B00041F6A6 /* Weird Fly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA3C6F8318B7D9B00041F6A6 /* Build configuration list for PBXNativeTarget "Weird Fly" */;
+			buildPhases = (
+				EA3C6F4318B7D9B00041F6A6 /* Sources */,
+				EA3C6F4418B7D9B00041F6A6 /* Frameworks */,
+				EA3C6F4518B7D9B00041F6A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Weird Fly";
+			productName = "Weird fly";
+			productReference = EA3C6F4718B7D9B00041F6A6 /* Weird Fly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA3C6F7118B7D9B00041F6A6 /* Weird FlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA3C6F8618B7D9B00041F6A6 /* Build configuration list for PBXNativeTarget "Weird FlyTests" */;
+			buildPhases = (
+				EA3C6F6E18B7D9B00041F6A6 /* Sources */,
+				EA3C6F6F18B7D9B00041F6A6 /* Frameworks */,
+				EA3C6F7018B7D9B00041F6A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA3C6F7818B7D9B00041F6A6 /* PBXTargetDependency */,
+			);
+			name = "Weird FlyTests";
+			productName = "Weird flyTests";
+			productReference = EA3C6F7218B7D9B00041F6A6 /* Weird FlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA3C6F3F18B7D9B00041F6A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Paolo furlan";
+				TargetAttributes = {
+					EA3C6F4618B7D9B00041F6A6 = {
+						DevelopmentTeam = 7K9XH8Y4UR;
+					};
+					EA3C6F7118B7D9B00041F6A6 = {
+						TestTargetID = EA3C6F4618B7D9B00041F6A6;
+					};
+				};
+			};
+			buildConfigurationList = EA3C6F4218B7D9B00041F6A6 /* Build configuration list for PBXProject "Weird Fly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				it,
+			);
+			mainGroup = EA3C6F3E18B7D9B00041F6A6;
+			productRefGroup = EA3C6F4818B7D9B00041F6A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA3C6F4618B7D9B00041F6A6 /* Weird Fly */,
+				EA3C6F7118B7D9B00041F6A6 /* Weird FlyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA3C6F4518B7D9B00041F6A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3C6F6D18B7D9B00041F6A6 /* Images.xcassets in Resources */,
+				EA3C6F6318B7D9B00041F6A6 /* Main_iPad.storyboard in Resources */,
+				EA3C6FA818B7DD730041F6A6 /* medal_bronze@2x.png in Resources */,
+				EA3C6FBB18B83F630041F6A6 /* Localizable.strings in Resources */,
+				EA3C6F6018B7D9B00041F6A6 /* Main_iPhone.storyboard in Resources */,
+				EA3C6FA918B7DD730041F6A6 /* medal_gold@2x.png in Resources */,
+				EA3C6FA618B7DD730041F6A6 /* game_over@2x.png in Resources */,
+				EAE1111A18BC114000791DA7 /* coins.wav in Resources */,
+				EA3C6FAC18B7DD730041F6A6 /* medal_silver@2x.png in Resources */,
+				EA3C6FA718B7DD730041F6A6 /* get_ready@2x.png in Resources */,
+				EA3C6F5718B7D9B00041F6A6 /* InfoPlist.strings in Resources */,
+				EA3C6FAB18B7DD730041F6A6 /* medal_platinum@2x.png in Resources */,
+				EA3C6FAA18B7DD730041F6A6 /* medal_plate@2x.png in Resources */,
+				EAE1111918BC114000791DA7 /* bonus.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3C6F7018B7D9B00041F6A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3C6F7E18B7D9B00041F6A6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA3C6F4318B7D9B00041F6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3C6FF018B963460041F6A6 /* HomeScene.m in Sources */,
+				EA3C6FD218B922E90041F6A6 /* NSDataAES256.m in Sources */,
+				EA3C6FFE18BA3CEC0041F6A6 /* FXBlurView.m in Sources */,
+				EA3C6FC918B922810041F6A6 /* SoundEffects.m in Sources */,
+				EA3C6FB218B7DF4F0041F6A6 /* SKScrollingNode.m in Sources */,
+				EA3C6F8D18B7DA8B0041F6A6 /* Math.m in Sources */,
+				EA3C6F9118B7DCAF0041F6A6 /* WeirdNode.m in Sources */,
+				EA3C6F6918B7D9B00041F6A6 /* Scene.m in Sources */,
+				EA3C6F6618B7D9B00041F6A6 /* ViewController.m in Sources */,
+				EA3C6FD118B922E90041F6A6 /* GameCenterManager.m in Sources */,
+				EA3C6F5D18B7D9B00041F6A6 /* AppDelegate.m in Sources */,
+				EA3C6FB518B7E1610041F6A6 /* Score.m in Sources */,
+				EA3C6FD318B922E90041F6A6 /* Reachability.m in Sources */,
+				EA3C6F5918B7D9B00041F6A6 /* main.m in Sources */,
+				EA3C6FF418B9652D0041F6A6 /* AYUIButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3C6F6E18B7D9B00041F6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3C6F8018B7D9B00041F6A6 /* Weird_flyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA3C6F7818B7D9B00041F6A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA3C6F4618B7D9B00041F6A6 /* Weird Fly */;
+			targetProxy = EA3C6F7718B7D9B00041F6A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA3C6F5518B7D9B00041F6A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA3C6F5618B7D9B00041F6A6 /* en */,
+				EA3C6FBE18B83F6C0041F6A6 /* it */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA3C6F5E18B7D9B00041F6A6 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA3C6F5F18B7D9B00041F6A6 /* Base */,
+				EA3C6FC018B83F6C0041F6A6 /* it */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EA3C6F6118B7D9B00041F6A6 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA3C6F6218B7D9B00041F6A6 /* Base */,
+				EA3C6FC118B83F6C0041F6A6 /* it */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EA3C6F7C18B7D9B00041F6A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA3C6F7D18B7D9B00041F6A6 /* en */,
+				EA3C6FC218B83F6C0041F6A6 /* it */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA3C6FBD18B83F630041F6A6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA3C6FBC18B83F630041F6A6 /* Base */,
+				EA3C6FBF18B83F6C0041F6A6 /* it */,
+				EA29926618BD388300B8E80F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA3C6F8118B7D9B00041F6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA3C6F8218B7D9B00041F6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA3C6F8418B7D9B00041F6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paolo Furlan (7K9XH8Y4UR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paolo Furlan (7K9XH8Y4UR)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weird fly/Weird Fly-Prefix.pch";
+				INFOPLIST_FILE = "Weird fly/Weird Fly-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/paolofurlan/Dropbox/iPhone\\ Apps/Weird\\ fly/Library",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "Weird Fly";
+				PROVISIONING_PROFILE = "9AD31E73-E9AC-451B-A903-331B5C1BA78C";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA3C6F8518B7D9B00041F6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paolo Furlan (7K9XH8Y4UR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paolo Furlan (7K9XH8Y4UR)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weird fly/Weird Fly-Prefix.pch";
+				INFOPLIST_FILE = "Weird fly/Weird Fly-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/paolofurlan/Dropbox/iPhone\\ Apps/Weird\\ fly/Library",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "Weird Fly";
+				PROVISIONING_PROFILE = "9AD31E73-E9AC-451B-A903-331B5C1BA78C";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA3C6F8718B7D9B00041F6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weird fly.app/Weird fly";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weird fly/Weird fly-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Weird flyTests/Weird FlyTests-Info.plist";
+				PRODUCT_NAME = "Weird FlyTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EA3C6F8818B7D9B00041F6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weird fly.app/Weird fly";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weird fly/Weird fly-Prefix.pch";
+				INFOPLIST_FILE = "Weird flyTests/Weird FlyTests-Info.plist";
+				PRODUCT_NAME = "Weird FlyTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA3C6F4218B7D9B00041F6A6 /* Build configuration list for PBXProject "Weird Fly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3C6F8118B7D9B00041F6A6 /* Debug */,
+				EA3C6F8218B7D9B00041F6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA3C6F8318B7D9B00041F6A6 /* Build configuration list for PBXNativeTarget "Weird Fly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3C6F8418B7D9B00041F6A6 /* Debug */,
+				EA3C6F8518B7D9B00041F6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA3C6F8618B7D9B00041F6A6 /* Build configuration list for PBXNativeTarget "Weird FlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3C6F8718B7D9B00041F6A6 /* Debug */,
+				EA3C6F8818B7D9B00041F6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA3C6F3F18B7D9B00041F6A6 /* Project object */;
+}

@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Weird fly
+
+  Created by Paolo furlan on 22/02/14.
+  Copyright (c) 2014 Paolo furlan. All rights reserved.
+*/
+
+"Restart"="Restart";
+"Score: %d"="Score: %d";
+"Start"="Start";
+"Rate us"="Rate us";
+"NEW Highscore"="NEW Highscore:";
+"Highscore:"="Highscore:";
+"Hey! It's been a week since the last time you played Weird Fly! Open it and learn to fly!"="Hey! It's been a week since the last time you played Weird Fly! Open it and learn to fly!";
+"Open"="Open";
+"I'm playing Weird Fly!"="I'm playing Weird Fly!";
+"Hello! I'm playing Weird Fly! Download it here: %@"="Hello! I'm playing Weird Fly! Download it here: %@";
